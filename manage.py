@@ -31,7 +31,6 @@ def sendNoti(message, phone):
       'phone': phone,
       'message':  message,
       'key': TEXT_API,})
-    print(TEXT_API)
     return req.json()
 
 
