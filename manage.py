@@ -60,7 +60,7 @@ while True:
     status = ""
     if ethamount > DesireAmount:
         status=sendNoti(message_high,'6263213319')
-        print(status.json())
+        print(status)
         time.sleep(120)
     if ethamount <= DesireAmount_LOW:
         status=sendNoti(message_low,'6263213319')
