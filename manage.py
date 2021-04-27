@@ -12,6 +12,8 @@ API= os.getenv("API")
 APIsecrect= os.getenv("APIsecrect")
 TEXT_API= os.getenv("TEXT_API")
 
+
+
 DesireAmount = float( os.getenv("DesireAmount"))
 DesireAmount_LOW = float(os.getenv("DesireAmount_LOW"))
 scheduler = sched.scheduler(time.time, time.sleep)
@@ -29,6 +31,7 @@ def sendNoti(message, phone):
       'phone': phone,
       'message':  message,
       'key': TEXT_API,})
+    print(TEXT_API)
     return req.json()
 
 
