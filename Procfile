@@ -1,1 +1,1 @@
-worker: python3 mangage.py
+worker: python3 manage.py
