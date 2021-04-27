@@ -53,7 +53,7 @@ while True:
     checkQuotaCount()
     ethData = checkPrice();
     ethamount = float( ethData['amount'])
-    print(ethamount)
+    print('Current Amount'+ethamount+ ', Desired Amount '+ DesireAmount)
     message_high = "ETH-USD value is supress "+ str(DesireAmount)+ '$.'
     message_low = "ETH-USD value is drop to "+ str(DesireAmount)+'$.'
 
